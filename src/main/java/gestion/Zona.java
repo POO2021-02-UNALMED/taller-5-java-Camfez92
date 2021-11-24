@@ -5,34 +5,34 @@ import java.util.ArrayList;
 
 public class Zona {
 	
-	//Atributos
+	
 	private String nombre;
 	private Zoologico zoo;
 	private ArrayList<Animal> animales = new ArrayList<Animal>();
 	
 	
-	//Constructores
 	
-	//Constructor vacio
+	
+
 	public Zona() {
 		zoo = new Zoologico();
 		this.zoo.agregarZonas(this);
 		
 	}
 	
-	//Constructor con parametros
+	
 	public Zona(String nombre, Zoologico zoo) {
 		this.nombre = nombre;
 		this.zoo=zoo;
 		this.zoo.agregarZonas(this);
 	}
 	
-	//Agregar animal a la lista de animales de la zona
+	
 	public void agregarAnimales(Animal animal) {
 		animales.add(animal);
 	}
 	
-	//Cantidad de animales de esta zona
+	
 	public int cantidadAnimales() {
 		return animales.size();
 	}

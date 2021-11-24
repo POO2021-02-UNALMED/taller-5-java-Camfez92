@@ -15,16 +15,14 @@ public class Animal {
 	private ArrayList<Zona> zona = new ArrayList<Zona>();
 	
 	
-	//Constructores
 	
-	//Constructor vacio
 	
 	public Animal(){
 			
 			totalAnimales++;
 	}
 	
-	//Constructor con parametros
+	
 	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre=nombre;
 		this.edad=edad;
@@ -33,7 +31,7 @@ public class Animal {
 		totalAnimales++;
 	}
 	
-	//Metodos
+	
 	
 	public static String totalPorTipo() {
 		return "Mamiferos: " + Mamifero.cantidadMamiferos() +

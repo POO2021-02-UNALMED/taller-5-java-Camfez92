@@ -11,9 +11,7 @@ public class Reptil extends Animal {
 	private int largoCola;
 	
 	
-	//Constructores
 	
-	//Constructor vacio
 	public Reptil() {
 		setTotalAnimales(getTotalAnimales() + 1);
 		listado.add(this);
@@ -28,7 +26,7 @@ public class Reptil extends Animal {
 		listado.add(this);
 	}
 	
-	//Metodos
+	
 	
 	
 	static public int cantidadReptiles() {

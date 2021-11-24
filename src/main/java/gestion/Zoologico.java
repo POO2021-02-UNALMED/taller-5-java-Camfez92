@@ -3,23 +3,23 @@ import java.util.ArrayList;
 
 public class Zoologico {
 	
-	//Atributos
+	
 	private String nombre;
 	private String ubicacion;
 	private ArrayList<Zona> zonas;
 	
-	//Constructores
 	
-	//Constructor vacio
+	
+	
 	public Zoologico() {}
 	
-	//Constructor con parametros
+	
 	public Zoologico (String nombre, String ubicacion) {
 		this.nombre=nombre;
 		this.ubicacion=ubicacion;
 	}
 	
-	//Cantidad total de animales en el zoologico
+	
 	public int cantidadTotalAnimales() {
 		int numAnimales=0;
 		for(int i=0;i < zonas.size(); i++) {
@@ -29,13 +29,13 @@ public class Zoologico {
 		return numAnimales;
 	}
 	
-	//Agregar nuevas zonas
+	
 	public void agregarZonas(Zona zona) {
 		zonas.add(zona);
 	}
 
 	
-	//Metodos getters y setters
+	
 	public String getNombre() {
 		return nombre;
 	}

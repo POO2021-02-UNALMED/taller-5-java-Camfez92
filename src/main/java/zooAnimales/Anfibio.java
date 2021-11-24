@@ -4,22 +4,20 @@ import java.util.ArrayList;
 
 public class Anfibio extends Animal{
 	
-	//Atributos
+	
 	private static ArrayList<Anfibio> listado = new ArrayList<Anfibio>();
 	public static int ranas;
 	public static int salamandras;
 	private String colorPiel;
 	private boolean venenoso;
 	
-	//Constructores
 	
-	//COnstructor vacio
 	public Anfibio() {
 		setTotalAnimales(getTotalAnimales() + 1);
 		listado.add(this);
 	}
 	
-	//Constructor con parametros
+	
 	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
 		super(nombre, edad, habitat, genero);
 		this.colorPiel = colorPiel;
@@ -28,7 +26,7 @@ public class Anfibio extends Animal{
 		listado.add(this);
 	}
 	
-	//Cantidad por tipo Anfibio
+	
 	static public int cantidadAnfibios() {
 		return listado.size();
 	}
