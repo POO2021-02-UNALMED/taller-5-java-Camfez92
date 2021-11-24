@@ -15,8 +15,8 @@ public class Zoologico {
 	
 	
 	public Zoologico (String nombre, String ubicacion) {
-		this.nombre=nombre;
-		this.ubicacion=ubicacion;
+		this.setNombre(nombre);
+		this.setUbicacion(ubicacion);
 	}
 	
 	
