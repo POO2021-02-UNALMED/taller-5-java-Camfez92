@@ -6,7 +6,7 @@ import gestion.*;
 public class Animal {
 	
 	
-	//Atributos
+	
 	private static int totalAnimales;
 	private String nombre;
 	private int edad;
