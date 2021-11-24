@@ -44,15 +44,17 @@ public class Animal {
 	@Override
 	public String toString() {
 		
-		if(zona==null) {
-			return "Mi nombre es " + nombre + ", tengo una edad de " + Integer.toString(edad) + 
-					", habito en " + habitat +" y mi genero es " + genero;
-		}
-		else {
+		if(zona.size()==1) {
+			
 			return "Mi nombre es " + nombre + ", tengo una edad de " + Integer.toString(edad) + 
 					", habito en " + habitat +
 					" y mi genero es " + genero + ", la zona en la que me ubico es " + zona.get(0).getNombre() + 
 					", en el " + zona.get(0).getNombre();
+			
+		}
+		else {
+			return "Mi nombre es " + nombre + ", tengo una edad de " + Integer.toString(edad) + 
+					", habito en " + habitat +" y mi genero es " + genero;
 		}
 	}
 	
